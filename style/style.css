@@ -5,11 +5,17 @@
     font-family: "Open Sans";
 }
 
+/* Boot CSS */
+
 .center{
     max-width: 1280px;
     padding: 0 2%;
     margin: 0 auto;
+}
 
+.center-serviços{
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .w33{
@@ -29,5 +35,139 @@
 }
 
 .clear{
-    clear:both;
+    clear: both;
+}
+
+/* Estilização Site */
+
+header{
+    background: #03738C;
+    padding: 20px 0;
+}
+
+.logo-index{
+    object-fit: cover;
+    background-image: url(../images/SEATI\ -\ LOGO.png);
+    background-position: 5px 0;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    width: 122px;
+    height: 100px;
+    display: block;
+    text-indent: -9000px;
+    float: left;
+
+   
+
+}
+
+.body{
+    font-size: 1rem;
+    background-color: #444;
+    
+}
+
+
+.thumb{
+    background: #232323;
+    box-sizing: border-box;
+    padding: 7px;
+    min-height: 417px;
+    position: relative;
+}
+
+.thumb img {
+    width: 100%;
+    object-fit: fill;
+    max-height: 188px;
+    min-height: 188px;
+}
+
+
+
+.bg-index{
+    background: linear-gradient(69deg, #222 15%, #444);
+    box-sizing: border-box;
+    padding: 20px 0;
+    width: 100%;
+}
+
+
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+.img{
+    border: 0;
+    vertical-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+[class*="w33 left"] {
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.gap{
+    margin: 3px;
+}
+
+.txtcenter{
+    text-align: center;
+}
+
+.font-sm{
+    font-size: 12px! important;
+}
+
+.h2{
+    display: block;
+    font-size: 16px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bg-index h2{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.bg-index h2, .bg-index p{
+    color: white;
+    text-transform: uppercase;
+}
+
+.mobile{
+    display: none;
+}
+
+nav.desktop ul{
+    position: relative;
+    top: 40px;
+    list-style-type: none;
+}
+
+nav.desktop li{
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0 55px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
 }
