@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border:0;
     box-sizing: border-box;
     font-family: "Open Sans";
     
@@ -13,20 +14,15 @@ html, body{
     overflow-x: hidden !important; 
 }
 
+
 .center{
     max-width: 1280px;
     padding: 1% 2%;
     margin: 0 auto;
 }
 
-/* .center-serviços{
-    
-} */
-
 .w33{
-    width: 100%;
-    
-   
+    width: 100%;   
 }
 
 .w50{
@@ -47,12 +43,8 @@ html, body{
 
 /* Estilização Site */
 
-header{
-    background: whitesmoke;
-    padding: 0;
-}
 
-main{
+header main{
     background: whitesmoke;
 }
 
@@ -222,37 +214,34 @@ p{
     display: none;
 }
 
-    nav.desktop ul{
+nav.desktop ul{
     position: relative;
     top: 40px;
     list-style-type: none;
 }
 
-    nav.desktop li{
+nav.desktop li{
     font-weight: 600;
-    
     font-size: 15px;
     padding: 0 15px;
     text-transform: uppercase;
     display: inline-block;
-    }
+}
 
-    nav.desktop a{
+nav.desktop a{
     color: #0f0050;
     text-decoration: none;
-    }
+}
 
 
-
-
- nav.desktop{
+nav.desktop{
         display: none;
-    }
+}
 
    
 nav.mobile{
         display: block;
-    }
+}
 
    
 .botao-menu-mobile{
@@ -262,11 +251,77 @@ nav.mobile{
         float: right;
         margin-top: 30px;
         margin-right: 20px;
-    }
+}
 
 nav.mobile ul{
         display:none;
-    }
+        top: 100px;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+}
+
+nav.mobile li{
+    font-weight: 600;
+    width: 100%;
+    display: block;
+    background: whitesmoke;
+    border-bottom: 1px solid #ccc;
+    font-size: 17px;
+    padding: 8px 0;
+}
+
+nav.mobile a{
+    display: block;
+    color: #020659;
+    text-decoration: none;
+}
+
+section.erro-404 h2{
+    text-align: center;
+    color:#444;
+    font-weight: 400;
+    font-size: 28px;
+    border-top: 2px solid #444;
+}
+
+section.erro-404 p{
+    margin-top:8px;
+    text-align: center;
+    font-size: 16px;
+    color: #444;
+    font-weight: 300;
+}
+
+section.erro-404 a{
+    color:#444;
+}
+
+.wraper-404{
+    /* transform:(-50%, -50%);  */
+    /* -ms-transform: translate(-50%, -50%);  */
+    width: 100%;
+    padding: 0 2%;
+    max-width: 1280px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+}
+
+footer{
+    background: whitesmoke;
+    text-align: center;
+}
+
+
+footer.fixed{
+    
+    bottom: 0;
+    width: 100%;
+}
+
 
     
 @media screen and (min-width: 768px){
@@ -310,10 +365,6 @@ nav.mobile ul{
 
 }
 
-footer{
-    background: whitesmoke;
-    text-align: center;
-}
 
 @media screen and (min-width: 1024px){
     section.banner-principal{
