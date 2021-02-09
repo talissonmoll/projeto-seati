@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="css/all.css" rel="stylesheet">
+    <link rel="icon" href="images/SEATI.ico">    
     <link href="<?php echo INCLUDE_PATH; ?>https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="soluções, solucoes, seati, segurança, eletrônica, eletronica, seguranca, eletrica, serralheria, construção civil">

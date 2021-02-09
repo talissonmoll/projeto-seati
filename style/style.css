@@ -423,11 +423,13 @@ textarea{
 }
 
 
-@media screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px){
     section.banner-principal{
         background-position: 0px -210px;
 
     }
+
+    
 }
 
 
@@ -454,10 +456,11 @@ textarea{
 
 .bg2-servicos{
     background: url(../images/SEATI\ -\ AZUL.png) no-repeat 50% 50% ;
-    background-size: cover;
-    background-size: 40%;
-    top: 50%;
+    background-size: 80%;
+    top: 10%;
     height: 300px;
+    text-align: center;
+    position: relative;
         
 }
 
@@ -467,6 +470,7 @@ textarea{
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    border-top: 10px;
    
 }
 
@@ -484,18 +488,21 @@ textarea{
     color: #0f0050;
     font-size: 25px;
     top: -40%;
+    padding: 0 2px;
 
 }
 
 article{
     background-color: #444;
+    background-image: url(../images/texture8.jpg);
+    background-size: cover;
     
 }
 
 .thumb2 {
     box-sizing: border-box;
     padding: 7px;
-    min-height: 460px;
+    min-height: 350px;
     position: relative;
     border: 1px solid darkgrey;
     background-color: rgb(232 232 232);
@@ -512,5 +519,26 @@ article .h2{
     color: #0f0050;
 }
 
+article p{
+    color: #0f0050;
+    
+}
 
 
+@media only screen and (min-width: 768px ){
+    .bg2-servicos{
+        background-size: 60%;
+        
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .bg2-servicos{
+        background-size: 50%;
+        
+    }
+
+    .flex-servicos{
+        padding-top: 50px;
+    }
+}
