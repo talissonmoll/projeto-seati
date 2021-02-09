@@ -1,6 +1,6 @@
 <?php include('config.php'); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <link href="css/all.css" rel="stylesheet">
@@ -9,10 +9,14 @@
     <meta name="keywords" content="soluções, solucoes, seati, segurança, eletrônica, eletronica, seguranca, eletrica, serralheria, construção civil">
     <meta name="description" content="SEATI Soluções é referência nos serviços de Segurança Eletrônica, Elétrica, Refrigeração, Construção Civil e Serralheria">
     <link href="<?php echo INCLUDE_PATH; ?>style/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>style/reset.css" >
     
     <title>SEATI SOLUÇÕES</title>
 </head>
 <body>
+
+    <div class="content">
+
     <header>
         <div class="center">
              <a href="<?php echo INCLUDE_PATH; ?>" class="logo-index">SEATI</a><!--logo-->
@@ -54,17 +58,15 @@
             include('pages/404.php');
 
         }
-            
-        
-            /*$url = $_GET['url'];
-
-            echo $url;*/
-
-
+                   
     ?>     
 
-    <footer class="clear fixed">
-        <div class="center">
+    
+        
+    </div>
+
+    <footer class="fixed">
+        <div class="center" id="f1">
         <p>Copyright © - SEATI - Todos os direitos reservados.</p>
         </div><!--center-->
     </footer>

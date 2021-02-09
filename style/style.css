@@ -44,7 +44,7 @@ html, body{
 /* Estilização Site */
 
 
-header main{
+header, body{
     background: whitesmoke;
 }
 
@@ -59,8 +59,6 @@ header main{
     display: block;
     text-indent: -9000px;
     float: left;
-
-   
 
 }
 
@@ -279,6 +277,10 @@ nav.mobile a{
     text-decoration: none;
 }
 
+section.erro-404{
+    min-height: 650px;
+}
+
 section.erro-404 h2{
     text-align: center;
     color:#444;
@@ -302,25 +304,80 @@ section.erro-404 a{
 .wraper-404{
     /* transform:(-50%, -50%);  */
     /* -ms-transform: translate(-50%, -50%);  */
-    width: 100%;
+    width: 96%;
     padding: 0 2%;
     max-width: 1280px;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
 }
+
+.content{
+    min-height: calc(100vh - 70px);
+}
+
 
 footer{
     background: whitesmoke;
     text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+#f1{
+    padding: 1% 2% 0% 2%;
+    margin-top: 10px;
 }
 
 
 footer.fixed{
+    height: 70px;
     
-    bottom: 0;
-    width: 100%;
 }
+
+
+textarea{
+    border: 2px solid #444;
+}
+
+.contato-container{
+    text-align: center;
+}
+
+.contato-container input[type=text]{
+    width: 80%;
+    max-width: 580px;
+    height: 40px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #444;
+}
+
+.contato-container textarea{
+    padding-top: 8px;
+    width: 80%;
+    max-width: 580px;
+    height: 120px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #444;
+    resize: vertical;
+}
+
+.contato-container input[type=submit]{
+    background: #020659;
+    width: 140px;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
 
 
     
@@ -372,4 +429,88 @@ footer.fixed{
 
     }
 }
+
+
+/* PAGINA SERVIÇOS */
+
+.line-custom {
+    display: block;
+    position: relative;
+    top: -49%;
+    background-color: #020659;
+    width: 10%;
+    height: 2px;
+    margin: 0 auto 5px auto;
+}
+
+.bg-servicos{
+    background:url(../images/white-bricks-wall-texture.jpg)
+    no-repeat 50% 50%;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.bg2-servicos{
+    background: url(../images/SEATI\ -\ AZUL.png) no-repeat 50% 50% ;
+    background-size: cover;
+    background-size: 40%;
+    top: 50%;
+    height: 300px;
+        
+}
+
+
+.flex-servicos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+   
+}
+
+#titulo1{
+    margin: 10px 0;
+    position: relative;
+    top: -40%;
+    color:#0f0050;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.flex-servicos p{
+    position: relative;
+    color: #0f0050;
+    font-size: 25px;
+    top: -40%;
+
+}
+
+article{
+    background-color: #444;
+    
+}
+
+.thumb2 {
+    box-sizing: border-box;
+    padding: 7px;
+    min-height: 460px;
+    position: relative;
+    border: 1px solid darkgrey;
+    background-color: rgb(232 232 232);
+    
+}
+
+.thumb2 img{
+    width: 100%;
+    object-fit: cover;
+    border: 0;
+}
+
+article .h2{
+    color: #0f0050;
+}
+
+
 
