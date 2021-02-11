@@ -46,6 +46,9 @@ html, body{
 
 header, body{
     background: whitesmoke;
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(5,5,5,0.3);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(5,5,5,0.3);
+    box-shadow: 0px 3px 12px 0px rgba(5,5,5,0.3);
 }
 
 .logo-index{
@@ -85,6 +88,7 @@ section.descricao-empresa h1{
     text-decoration: none;
     margin: 20px 0;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 a{
@@ -108,10 +112,10 @@ p{
 }
 
 .thumb{
-    background: #232323;
+    background: rgba(23, 23, 23, 0.7);
     box-sizing: border-box;
     padding: 7px;
-    min-height: 500px;
+    min-height: 450px;
     position: relative;
 }
 
@@ -137,7 +141,10 @@ p{
 
 
 .bg-index{
-    background: linear-gradient(69deg, rgb(34, 34, 34) 15%, #444);
+    /* background: linear-gradient(69deg, rgb(34, 34, 34) 15%, #444); */
+    background-image: url(../images/texture6.jpg);
+    object-fit: fill;
+    background-size: contain;
     box-sizing: border-box;
     padding: 20px 0;
     width: 100%;
@@ -231,6 +238,10 @@ nav.desktop a{
     text-decoration: none;
 }
 
+nav.desktop a:hover{
+    color: #F25835;
+}
+
 
 nav.desktop{
         display: none;
@@ -249,6 +260,10 @@ nav.mobile{
         float: right;
         margin-top: 30px;
         margin-right: 20px;
+}
+
+.botao-menu-mobile i:hover{
+    color: #F25835;
 }
 
 nav.mobile ul{
@@ -327,6 +342,15 @@ footer{
 #f1{
     padding: 1% 2% 0% 2%;
     margin-top: 10px;
+    float: left;
+}
+
+#f1 p{
+    font-size: 17px;
+    color: #0f0050;
+    margin-left: 15px;
+    padding-top: 10px;
+
 }
 
 
@@ -335,14 +359,44 @@ footer.fixed{
     
 }
 
+.icons{
+    padding: 0% 10% 2% 0%;
+    margin: 10px 0 10px 20px;
+    font-size: 40px;
+    text-align: center;
+}
 
+.icons i{
+    color: #0f0050;
+    cursor:pointer;
+    margin:15px 5px 0px 5px;
+}
+
+.icons i:hover{
+    color: #F25835;
+}
+
+
+/*              Página CONTATO          */
 textarea{
     border: 2px solid #444;
 }
 
 .contato-container{
-    text-align: center;
+    width: 100%;
+    display: block;
+    background-color: #fff;  
+    min-height: calc(100vh - 70px);  
+    
 }
+
+.contato-container h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #020659;
+    margin: 15px;
+}
+
 
 .contato-container input[type=text]{
     width: 80%;
@@ -377,7 +431,63 @@ textarea{
     cursor: pointer;
 }
 
+#contato-msg{
+    display: block;
+    width: 100%;
+    position: relative;
+    left: 10px;
+    
+}
 
+
+#contato-info{
+    display: block;
+    width: 100%;
+    position: relative;    
+}
+
+#contato-info h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#contato-info strong{
+    font-style: italic;
+
+}
+
+#redes-sociais{
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+}
+
+#redes-sociais h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+#redes-sociais-icons{
+    text-align: center;
+    margin: 10px 0 10px 20px;
+    font-size: 40px;
+    
+}
+
+#redes-sociais-icons i{
+    color: #0f0050;
+    cursor:pointer;
+    margin:15px 5px 0px 5px;
+}
+
+
+
+ 
+/*       PAGINA CONTATO - Fim     */
 
 
     
@@ -419,6 +529,40 @@ textarea{
         background-position: 0 -75px;
     }
 
+    #f1 p{
+        font-size: 20px;
+        color: #0f0050;
+        margin-left: 15px;
+        padding-top: 10px;
+    }
+    .icons{
+        padding: 0% 10% 2% 0%;
+        margin: 10px 0;
+        float: right;
+        font-size: 40px;
+    }
+
+    #contato-msg{
+        float: left;
+        width: 50%;
+        position: relative;
+        left: 10px;
+    }    
+    
+    #contato-info{
+        float: left;        
+        width: 50%;
+        position: relative;    
+    }
+    
+    #redes-sociais{
+        float: left;
+        width: 50%;
+        position: relative;
+        padding-top: 30px;
+    }
+    
+    
 
 }
 
@@ -429,11 +573,23 @@ textarea{
 
     }
 
+    #contato-info{
+        float: left;
+        width: 50%;
+        position: relative;    
+    }
+
+    #redes-sociais{
+        float: left;
+        width: 50%;
+        position: relative;
+        padding-top: 30px;
+    }
     
 }
 
 
-/* PAGINA SERVIÇOS */
+/*      PAGINA SERVIÇOS       */
 
 .line-custom {
     display: block;
@@ -505,7 +661,7 @@ article{
     min-height: 350px;
     position: relative;
     border: 1px solid darkgrey;
-    background-color: rgb(232 232 232);
+    background-color: rgba(232, 232, 232, 0.7);
     
 }
 
@@ -542,3 +698,6 @@ article p{
         padding-top: 50px;
     }
 }
+
+
+/*              FIM PÁGINA SERVIÇOS              */

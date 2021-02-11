@@ -67,9 +67,17 @@
     </div>
 
     <footer class="fixed">
-        <div class="center" id="f1">
+        <div class="center">
+        <div id="f1">
         <p>Copyright © - SEATI - Todos os direitos reservados.</p>
+        </div>
+        <div class="icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-whatsapp"></i>
+        </div>
         </div><!--center-->
+
     </footer>
 
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
