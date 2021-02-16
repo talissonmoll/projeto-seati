@@ -111,6 +111,13 @@ p{
     border: 2px solid #222;
 }
 
+section.descricao-empresa a:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
 .thumb{
     background: rgba(23, 23, 23, 0.7);
     box-sizing: border-box;
@@ -137,6 +144,11 @@ p{
     right: 0;
 }
 
+.thumb a.btn:hover{
+    background: rgba(23, 23, 23, 1);
+
+}
+
 
 
 
@@ -144,10 +156,12 @@ p{
     /* background: linear-gradient(69deg, rgb(34, 34, 34) 15%, #444); */
     background-image: url(../images/texture6.jpg);
     object-fit: fill;
-    background-size: contain;
+    background-size: cover;
     box-sizing: border-box;
     padding: 20px 0;
     width: 100%;
+    background-repeat: no-repeat;
+    
     
     
 }
@@ -159,7 +173,7 @@ p{
     margin: 0 auto;
     max-width: 1280px;
     margin: 0 auto;
-    
+    max-width: 1280px;
 }
 
 .img{
@@ -186,6 +200,7 @@ p{
 .font-sm{
     font-size: 14px! important;
     color: white;
+    
 
 }
 
@@ -482,6 +497,10 @@ textarea{
     color: #0f0050;
     cursor:pointer;
     margin:15px 5px 0px 5px;
+}
+
+#redes-sociais-icons i:hover{
+    color: #F25835;
 }
 
 

@@ -72,9 +72,9 @@
         <p>Copyright © - SEATI - Todos os direitos reservados.</p>
         </div>
         <div class="icons">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-whatsapp"></i>
+            <a href="http://https://www.instagram.com/seatisolucoes/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/SEATI-Solu%C3%A7%C3%B5es-116593500248112"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5527997044710"><i class="fab fa-whatsapp"></i></a>
         </div>
         </div><!--center-->
 

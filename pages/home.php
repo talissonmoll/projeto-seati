@@ -24,7 +24,7 @@
                              <hr>
                              <p class="white font-sm txtcenter gap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eveniet sapiente nemo provident quod facere nobis eos odit illum, porro nesciunt, excepturi recusandae nam, repellat sint sit saepe consectetur tempore!
                              </p>
-                             <a class="btn" href="">Saiba mais</a>
+                             <a class="btn" href="<?php echo INCLUDE_PATH; ?>servicos">Saiba mais</a>
 
                             </div>
                     </div>
@@ -35,7 +35,7 @@
                              <hr>
                              <p class="white font-sm txtcenter gap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eveniet sapiente nemo provident quod facere nobis eos odit illum, porro nesciunt, excepturi recusandae nam, repellat sint sit saepe consectetur tempore!
                              </p>
-                             <a class="btn" href="">Saiba mais</a>                 
+                             <a class="btn" href="<?php echo INCLUDE_PATH; ?>servicos">Saiba mais</a>                 
                              </div>
                      </div>    
                      <div class="w33 left row">
@@ -45,7 +45,7 @@
                              <hr>
                              <p class="white font-sm txtcenter gap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eveniet sapiente nemo provident quod facere nobis eos odit illum, porro nesciunt, excepturi recusandae nam, repellat sint sit saepe consectetur tempore!
                              </p>
-                             <a class="btn" href="">Saiba mais</a>
+                             <a class="btn" href="<?php echo INCLUDE_PATH; ?>servicos">Saiba mais</a>
 
                             </div>
                     </div>
