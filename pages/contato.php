@@ -1,4 +1,13 @@
 <body>
+    <div class="bg-contato">
+        <br>
+           <div class="flex-servicos">
+                <h1 id="titulo1">Contato</h1>
+                <hr class="line-custom">
+                <p class="txtcenter white">Solicite seu orçamento!</p class="txtcenter">
+            </div><!--flex-servicos-->
+    </div><!--bg-servicos-->
+
     <div class="contato-container center">
         <h1>Contato</h1>
         <div id="contato-msg">

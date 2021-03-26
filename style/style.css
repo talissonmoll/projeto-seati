@@ -11,7 +11,7 @@
 
 /* Remover espaço em brando lateral no mobile */
 html, body{
-    overflow-x: hidden !important; 
+    overflow-x: hidden !important;
 }
 
 
@@ -44,7 +44,7 @@ html, body{
 /* Estilização Site */
 
 
-header, body{
+header{
     background: whitesmoke;
     -webkit-box-shadow: 0px 3px 12px 0px rgba(5,5,5,0.3);
     -moz-box-shadow: 0px 3px 12px 0px rgba(5,5,5,0.3);
@@ -72,19 +72,29 @@ header, body{
     
 }
 
+
+
 section.banner-principal{
     width: 100%;
-    height: 220px;
-    background-image: url(../images/banner-index.jpeg);
+    max-width: auto;
+    height: 77px;
+    background-image: url(../images/banner-home.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 130%;
     object-fit: fill;
     position: relative;
 }
 
+section.descricao-empresa{
+    background-color: #fff; 
+    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 1%, rgba(219,219,219,1) 3%, rgba(254,254,254,1) 19%, rgba(254,254,254,1) 100%);
+    padding: 10px 0 50px;
+}
+
 section.descricao-empresa h1{
-    color: #414143;
-    font-size: 24px;
+    color: #0f0050;
+    text-shadow: 1px 1px 2px;
+    font-size: 35px;
     text-decoration: none;
     margin: 20px 0;
     text-transform: uppercase;
@@ -96,7 +106,8 @@ a{
 }
 
 p{
-    margin: 1em 0;
+    margin: 1em 0; 
+    
 }
 
 .btn {
@@ -114,6 +125,7 @@ p{
 section.descricao-empresa a:hover{
     color: white;
     background-color: black;
+    transform: scale(1.2);
 }
 
 
@@ -122,7 +134,7 @@ section.descricao-empresa a:hover{
     background: rgba(23, 23, 23, 0.7);
     box-sizing: border-box;
     padding: 7px;
-    min-height: 450px;
+    min-height: 460px;
     position: relative;
 }
 
@@ -190,15 +202,32 @@ section.descricao-empresa a:hover{
 }
 
 .gap{
-    margin: 3px;
+    margin: 20px;
 }
 
 .txtcenter{
     text-align: center;
 }
 
+#qmsomos,
+#qmsomos2,
+#qmsomos3{
+    font-size: 20px;
+    text-align: justify;
+    padding: 25px 35px 0px;
+
+}
+
+#img-qmsomos img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 30px;
+
+}
+
 .font-sm{
-    font-size: 14px! important;
+    font-size: 17px! important;
     color: white;
     
 
@@ -214,6 +243,7 @@ section.descricao-empresa a:hover{
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    text-shadow: 1px 1px 4px;
     
 }
 
@@ -222,12 +252,14 @@ section.descricao-empresa a:hover{
     padding: 0 10px;
     margin: 5px 0;
     width: 100%;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .bg-index h2{
     color: white;
     text-transform: uppercase;
+    text-shadow: 2px 2px 3px;
+    text-align: center;
 }
 
 .mobile{
@@ -254,7 +286,12 @@ nav.desktop a{
 }
 
 nav.desktop a:hover{
-    color: #F25835;
+    color: #F25835;   
+}
+
+nav.desktop li:hover{
+    transform: scale(1.2);
+    transition: 400ms;
 }
 
 
@@ -279,6 +316,7 @@ nav.mobile{
 
 .botao-menu-mobile i:hover{
     color: #F25835;
+    transform: scale(1.2);
 }
 
 nav.mobile ul{
@@ -370,7 +408,7 @@ footer{
 
 
 footer.fixed{
-    height: 70px;
+    height: 130px;
     
 }
 
@@ -385,14 +423,27 @@ footer.fixed{
     color: #0f0050;
     cursor:pointer;
     margin:15px 5px 0px 5px;
+    transition: 400ms;
 }
 
 .icons i:hover{
     color: #F25835;
+    transform: scale(1.2);
 }
 
 
 /*              Página CONTATO          */
+
+.bg-contato{
+    background:url(../images/texture9.jpg)
+    no-repeat 50% 50%;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+
 textarea{
     border: 2px solid #444;
 }
@@ -509,7 +560,27 @@ textarea{
 /*       PAGINA CONTATO - Fim     */
 
 
-    
+@media screen and (min-width: 375px){
+    section.banner-principal{
+        height: 90px;
+
+
+    }
+
+
+}
+
+@media screen and (min-width: 425px){
+    section.banner-principal{
+        height: 102px;
+
+
+    }
+
+
+}
+
+
 @media screen and (min-width: 768px){
     div.w33{
         width: 33.33%;
@@ -529,6 +600,13 @@ textarea{
         display: none;
     }
 
+    #img-qmsomos img{
+        width: 60%;
+        left: 135px;                
+        top: 25px;
+    
+    }
+
    
     .botao-menu-mobile{
         font-size: 30px;
@@ -544,8 +622,10 @@ textarea{
     }
 
     section.banner-principal{
-        height: 400px;
-        background-position: 0 -75px;
+        height: 142px;
+        background-position: 0 0;
+        background-size: 100%;
+
     }
 
     #f1 p{
@@ -581,6 +661,14 @@ textarea{
         padding-top: 30px;
     }
     
+    #qmsomos,
+    #qmsomos2{
+        padding: 25px 90px 0px;
+    }
+
+    #qmsomos3{
+        padding: 10px 90px 0px;
+    }
     
 
 }
@@ -588,9 +676,15 @@ textarea{
 
 @media only screen and (min-width: 1024px){
     section.banner-principal{
-        background-position: 0px -210px;
+        background-position: 0px 0px;
+        height: 189px;
 
     }
+
+    #cabeçalho{
+        max-width: 1280px;
+    }
+
 
     #contato-info{
         float: left;
@@ -604,6 +698,23 @@ textarea{
         position: relative;
         padding-top: 30px;
     }
+
+    #qmsomos,
+    #qmsomos2{
+        padding: 25px 30px 0px;
+    }
+
+    #qmsomos3{
+        padding: 10px 0px 0px;
+    }
+
+    #img-qmsomos img{
+        width: 100%;
+        left: -5px;
+    }
+
+
+    
     
 }
 
@@ -614,30 +725,29 @@ textarea{
     display: block;
     position: relative;
     top: -49%;
-    background-color: #020659;
+    background-color: #f5f5f5;
     width: 10%;
     height: 2px;
     margin: 0 auto 5px auto;
 }
 
 .bg-servicos{
-    background:url(../images/white-bricks-wall-texture.jpg)
+    background:url(../images/texture9.jpg)
     no-repeat 50% 50%;
     background-size: cover;
-    height: 500px;
+    height: 150px;
     width: 100%;
     background-attachment: fixed;
 }
 
-.bg2-servicos{
-    background: url(../images/SEATI\ -\ AZUL.png) no-repeat 50% 50% ;
-    background-size: 80%;
+/* .bg2-servicos{
+    
     top: 10%;
     height: 300px;
     text-align: center;
     position: relative;
         
-}
+} */
 
 
 .flex-servicos{
@@ -653,14 +763,15 @@ textarea{
     margin: 10px 0;
     position: relative;
     top: -40%;
-    color:#0f0050;
+    color: rgb(245 245 245);
+    text-shadow: 2px 2px 4px;
     font-size: 30px;
     text-transform: uppercase;
 }
 
 .flex-servicos p{
     position: relative;
-    color: #0f0050;
+    color: rgb(245 245 245);
     font-size: 25px;
     top: -40%;
     padding: 0 2px;
@@ -668,8 +779,8 @@ textarea{
 }
 
 article{
-    background-color: #444;
-    background-image: url(../images/texture8.jpg);
+    background-color: white;
+    /* background:  -webkit-linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 40%, rgba(254,254,254,1) 65%, rgba(219,219,219,1) 100%);; */
     background-size: cover;
     
 }
@@ -679,9 +790,14 @@ article{
     padding: 7px;
     min-height: 350px;
     position: relative;
-    border: 1px solid darkgrey;
-    background-color: rgba(232, 232, 232, 0.7);
+    border: 1px solid #261d52;
+    box-shadow: 2px 2px 10px;
     
+}
+
+
+article .thumb2:hover{
+    box-shadow: tomato;
 }
 
 .thumb2 img{
@@ -691,11 +807,14 @@ article{
 }
 
 article .h2{
-    color: #0f0050;
+    color: #261d52;
+    transition: 400ms;
 }
 
+
+
 article p{
-    color: #0f0050;
+    color: #261d52;
     
 }
 
@@ -714,9 +833,67 @@ article p{
     }
 
     .flex-servicos{
-        padding-top: 50px;
+        padding-top: 10px;
     }
 }
 
+@media only screen and (min-width: 1200px){
+    #img-qmsomos img{
+        width: 70%
+    }
+}
 
+@media only screen and (min-width: 1280px){
+    .center{
+        max-width: 1440px;
+    }
+
+    section.banner-principal{
+        height: 236px;
+        left: -1px;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 1400px){
+
+    section.banner-principal{
+        height: 266px;
+        
+
+    }
+
+    #img-qmsomos img{
+        width: 65%
+    }
+
+    
+}
+
+@media only screen and (min-width: 1680px){
+
+    section.banner-principal{
+        height: 308px;
+        
+
+    }
+
+    
+
+    
+}
+
+@media only screen and (min-width: 1920px){
+
+    section.banner-principal{
+        height: 320px;
+        
+    }
+
+    
+
+    
+}
 /*              FIM PÁGINA SERVIÇOS              */

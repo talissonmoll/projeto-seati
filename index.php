@@ -3,15 +3,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    
     <link href="css/all.css" rel="stylesheet">
     <link rel="icon" href="images/SEATI.ico">    
-    <link href="<?php echo INCLUDE_PATH; ?>https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="soluções, solucoes, seati, segurança, eletrônica, eletronica, seguranca, eletrica, serralheria, construção civil">
     <meta name="description" content="SEATI Soluções é referência nos serviços de Segurança Eletrônica, Elétrica, Refrigeração, Construção Civil e Serralheria">
-    <link href="<?php echo INCLUDE_PATH; ?>style/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>style/reset.css" >
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/reset.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
     
+
     <title>SEATI SOLUÇÕES</title>
 </head>
 <body>
@@ -19,7 +22,7 @@
     <div class="content">
 
     <header>
-        <div class="center">
+        <div class="center" id="cabeçalho">
              <a href="<?php echo INCLUDE_PATH; ?>" class="logo-index">SEATI</a><!--logo-->
              <nav class="desktop right">
                 <ul>
@@ -72,7 +75,7 @@
         <p>Copyright © - SEATI - Todos os direitos reservados.</p>
         </div>
         <div class="icons">
-            <a href="http://https://www.instagram.com/seatisolucoes/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/seatisolucoes/"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/SEATI-Solu%C3%A7%C3%B5es-116593500248112"><i class="fab fa-facebook-square"></i></a>
             <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5527997044710"><i class="fab fa-whatsapp"></i></a>
         </div>

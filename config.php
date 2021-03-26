@@ -1,3 +1,3 @@
 <?php
-    define('INCLUDE_PATH','http://localhost/projeto-seati/');
+    define('INCLUDE_PATH','http://seatisolucoes.com/');
 ?>
