@@ -114,12 +114,19 @@ p{
     color: #222;
     padding: 10px 15px;
     box-sizing: border-box;
-    margin: 10px auto;
+    margin: 60px auto 10px;
     font-size: 14px;
     display: inline-block;
     transition: .3s;
     font-weight: bold;
     border: 2px solid #222;
+}
+
+.btn-index-servicos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 section.descricao-empresa a:hover{
@@ -140,7 +147,7 @@ section.descricao-empresa a:hover{
 
 .thumb img {
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
     max-height: 188px;
     min-height: 188px;
 }
@@ -166,11 +173,11 @@ section.descricao-empresa a:hover{
 
 .bg-index{
     /* background: linear-gradient(69deg, rgb(34, 34, 34) 15%, #444); */
-    background-image: url(../images/texture6.jpg);
+    /* background-image: url(../images/texture6.jpg); */
     object-fit: fill;
     background-size: cover;
     box-sizing: border-box;
-    padding: 20px 0;
+    padding: 20px 20px;
     width: 100%;
     background-repeat: no-repeat;
     
@@ -214,7 +221,7 @@ section.descricao-empresa a:hover{
 #qmsomos3{
     font-size: 20px;
     text-align: justify;
-    padding: 25px 35px 0px;
+    padding: 25px 31px 0px;
 
 }
 
@@ -235,7 +242,7 @@ section.descricao-empresa a:hover{
 
 .h2{
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -243,7 +250,7 @@ section.descricao-empresa a:hover{
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    text-shadow: 1px 1px 4px;
+    
     
 }
 
@@ -252,13 +259,13 @@ section.descricao-empresa a:hover{
     padding: 0 10px;
     margin: 5px 0;
     width: 100%;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .bg-index h2{
-    color: white;
+    color: #0f0050;
     text-transform: uppercase;
-    text-shadow: 2px 2px 3px;
+    text-shadow: 1px 1px 3px;
     text-align: center;
 }
 
@@ -419,14 +426,14 @@ footer.fixed{
     text-align: center;
 }
 
-.icons i{
+.icons a{
     color: #0f0050;
     cursor:pointer;
     margin:15px 5px 0px 5px;
     transition: 400ms;
 }
 
-.icons i:hover{
+.icons a:hover{
     color: #F25835;
     transform: scale(1.2);
 }
@@ -522,7 +529,8 @@ textarea{
 
 #contato-info strong{
     font-style: italic;
-
+    margin-left: 20px;
+    font-size: 20px;
 }
 
 #redes-sociais{
@@ -544,17 +552,33 @@ textarea{
     
 }
 
-#redes-sociais-icons i{
+
+
+
+
+/* #redes-sociais-icons svg{
     color: #0f0050;
     cursor:pointer;
     margin:15px 5px 0px 5px;
 }
 
-#redes-sociais-icons i:hover{
-    color: #F25835;
+
+
+#redes-sociais-icons svg:hover{
+    color: #F25835; 
+}*/
+
+.cards{
+    display: inline-block;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
 }
 
-
+.clientes-grid-container img{
+    width:100%;
+    height: 200px;
+    object-fit: contain;
+}
 
  
 /*       PAGINA CONTATO - Fim     */
@@ -576,6 +600,13 @@ textarea{
 
 
     }
+
+    #qmsomos,
+    #qmsomos2,
+    #qmsomos3{
+        padding: 25px 47px 0px;
+    }
+
 
 
 }
@@ -692,6 +723,12 @@ textarea{
         position: relative;    
     }
 
+    #contato-info strong{
+        
+        margin-left: 100px;
+        font-size: 20px;
+    }
+
     #redes-sociais{
         float: left;
         width: 50%;
@@ -705,12 +742,12 @@ textarea{
     }
 
     #qmsomos3{
-        padding: 10px 0px 0px;
+        padding: 10px 30px 0px;
     }
 
     #img-qmsomos img{
-        width: 100%;
-        left: -5px;
+        width: 50%;
+        left: 240px;
     }
 
 
@@ -787,11 +824,12 @@ article{
 
 .thumb2 {
     box-sizing: border-box;
-    padding: 7px;
+    padding: 8px;
     min-height: 350px;
     position: relative;
     border: 1px solid #261d52;
     box-shadow: 2px 2px 10px;
+    max-width: 320px;
     
 }
 
@@ -802,8 +840,9 @@ article .thumb2:hover{
 
 .thumb2 img{
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
     border: 0;
+    height: 300px;
 }
 
 article .h2{
@@ -824,6 +863,12 @@ article p{
         background-size: 60%;
         
     }
+
+    .thumb2 img{
+    
+    height: 230px;
+    
+    }
 }
 
 @media only screen and (min-width: 1024px){
@@ -839,7 +884,7 @@ article p{
 
 @media only screen and (min-width: 1200px){
     #img-qmsomos img{
-        width: 70%
+        width: 40%
     }
 }
 
@@ -866,7 +911,8 @@ article p{
     }
 
     #img-qmsomos img{
-        width: 65%
+        width: 40%;
+        left: 30%;
     }
 
     

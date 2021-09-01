@@ -1,3 +1,4 @@
 <?php
-    define('INCLUDE_PATH','http://seatisolucoes.com/');
+    define('INCLUDE_PATH','https://seatisolucoes.com/');
 ?>
+

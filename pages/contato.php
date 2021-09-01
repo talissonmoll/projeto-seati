@@ -10,6 +10,8 @@
 
     <div class="contato-container center">
         <h1>Contato</h1>
+        <form method="$_POST" action="/email.php"></form>
+
         <div id="contato-msg">
             <form>
                 <input type="text" name="nome" placeholder="Nome...">
@@ -27,12 +29,12 @@
 
         <div id="contato-info">
             <h2>SEATI - Soluções</h2>
-            <strong>Rua Casimiro de Abreu, XXX - Laranjeiras - Serra -ES - CEP: 12345-000</strong>
+            <strong>Prestação de serviços no ES e RJ</strong>
         <br>
         <br>
-        <strong>27 99999-9999</strong>
+        <strong>Solicite um orçamento: <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5527997044710">(27) 99704-4710</strong></a>
         <br>
-        <strong>Email:contato@seati.com.br</strong>
+        <strong>Email:contato@seatisolucoes.com</strong>
             </div>
         
             <br>
@@ -41,9 +43,9 @@
         <div id="redes-sociais">
             <h3>Sigam nossas redes sociais:</h3>
             <div id="redes-sociais-icons">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-whatsapp"></i>
+            <a href="https://www.instagram.com/seatisolucoes/"><i class="fab fa-instagram"></i>
+            <a href="https://www.facebook.com/SEATI-Solu%C3%A7%C3%B5es-116593500248112"><i class="fab fa-facebook-square"></i>
+            
             </div>
         </div>
 

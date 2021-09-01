@@ -4,16 +4,25 @@
 <head>
     <meta charset="UTF-8">
     
-    <link href="css/all.css" rel="stylesheet">
+    <link rel=icon href=favicon.png sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://www.seatisolucoes.com/css/all.css" rel="stylesheet">
+    
+    <link href="https://www.seatisolucoes.com/css/bootstrap-grid.css" rel="stylesheet"> 
     <link rel="icon" href="images/SEATI.ico">    
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="soluções, solucoes, seati, segurança, eletrônica, eletronica, seguranca, eletrica, serralheria, construção civil">
     <meta name="description" content="SEATI Soluções é referência nos serviços de Segurança Eletrônica, Elétrica, Refrigeração, Construção Civil e Serralheria">
-    <link href="style/style.css" rel="stylesheet">
-    <link href="style/reset.css" rel="stylesheet">
-    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="https://www.seatisolucoes.com/style/style.css" rel="stylesheet">
+    <link href="https://www.seatisolucoes.com/style/reset.css" rel="stylesheet">
+    <link href="https://www.seatisolucoes.com/js/jquery.js">
+    <link href="https://www.seatisolucoes.com/webfonts/fa-brands-400.tff">
     
+
+
+
+
 
     <title>SEATI SOLUÇÕES</title>
 </head>
@@ -27,7 +36,6 @@
              <nav class="desktop right">
                 <ul>
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>quem-somos">Quem Somos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>  
@@ -39,7 +47,6 @@
                 </div>
                 <ul>
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>quem-somos">Quem Somos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>  
@@ -85,6 +92,7 @@
 
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
 </body>
 </html>
