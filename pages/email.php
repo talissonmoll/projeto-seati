@@ -21,7 +21,7 @@ if ((isset($_POST['email']) && !empty(trim($_POST['email']))) && (isset($_POST['
     $mail->Host = 'mail.seatisolucoes.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'contato@seatisolucoes.com';
-    $mail->Password = 'Se@ti123';
+    $mail->Password = ;
     $mail->Port = 465;
 
     $mail->setFrom('contato@seatisolucoes.com');
